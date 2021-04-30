@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Integer?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="990.0" prefWidth="1910.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AppController">
+   <children>
+      <ImageView fx:id="Backgroundid" fitHeight="1008.0" fitWidth="1922.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Photos/tüm%20diziler/default.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="watch" layoutX="1572.0" layoutY="573.0" mnemonicParsing="false" onAction="#watchAction" prefHeight="30.0" prefWidth="80.0" text="İzle" visible="false" />
+      <TextField fx:id="Textfield" layoutX="288.0" layoutY="207.0" />
+      <Button fx:id="checktype" layoutX="505.0" layoutY="201.0" mnemonicParsing="false" onAction="#typeaction" prefHeight="36.0" prefWidth="130.0" text="Türe göre ara">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="checkname" layoutX="656.0" layoutY="201.0" mnemonicParsing="false" onAction="#nameaction" prefHeight="36.0" prefWidth="130.0" text="İsime göre ara">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ListView fx:id="listview" layoutX="103.0" layoutY="262.0" onMouseClicked="#GoMovie" prefHeight="722.0" prefWidth="684.0">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Recep İvedik 6" />
+            <String fx:value="The Witcher" />
+            <String fx:value="Assasins Creed " />
+            <String fx:value="Alaca Karanlık" />
+            <String fx:value="Yüzüklerin Efendisi İki Kule" />
+            <String fx:value="Maske" />
+            <String fx:value="Kara Şövalye" />
+            <String fx:value="Sherlock Holmes" />
+            <String fx:value="Yüzüklerin Efendisi Kralın Dönüşü" />
+            <String fx:value="Transformers Kayıp Çağ" />
+            <String fx:value="Başlangıç" />
+            <String fx:value="Interstellar" />
+            <String fx:value="Harry Potter Ölüm Yadigarları" />
+            <String fx:value="Jurassic World" />
+            <String fx:value="Fantastik Canavarlar" />
+            <String fx:value="Ninja Kaplumbağalar" />
+            <String fx:value="Kuşlarla Dans" />
+            <String fx:value="Mission Blue" />
+            <String fx:value="Mercan Peşinde" />
+            <String fx:value="Dream Big" />
+            <String fx:value="Aydaki Son Adam" />
+            <String fx:value="Plastik Okyanus" />
+            <String fx:value="Rakamlarla Tahmin" />
+            <String fx:value="Ben Efsaneyim" />
+            <String fx:value="Arif V 216" />
+            <String fx:value="pk" />
+            <String fx:value="Örümcek Adam" />
+            <String fx:value="Jurassic Park" />
+            <String fx:value="Frankestein" />
+            <String fx:value="Gezegenimiz" />
+            <String fx:value="72 Sevimli Hayvan" />
+            <String fx:value="Kuşçular" />
+            <String fx:value="Marsta Keşif" />
+            <String fx:value="Pandemic" />
+            <String fx:value="Pokemon" />
+            <String fx:value="Şirinler" />
+            <String fx:value="Charlienin Çikolata Fabrikası" />
+            <String fx:value="Alvin ve Sincaplar" />
+            <String fx:value="Scooby-Doo" />
+            <String fx:value="Kung Fu Panda" />
+            <String fx:value="Mr.Bean Tatilde" />
+            <String fx:value="Shrek" />
+            <String fx:value="Mega Zeka" />
+            <String fx:value="Bizi Hatırla" />
+            <String fx:value="Delibal" />
+            <String fx:value="Kardeşim Benim" />
+            <String fx:value="Dangal" />
+            <String fx:value="Yerçekimi" />
+            <String fx:value="Jaws" />
+            <String fx:value="Da Vinci Şifresi" />
+            <String fx:value="Marvels Iron Fist" />
+            <String fx:value="Ejderhalar" />
+            <String fx:value="Diriliş Ertuğrul" />
+            <String fx:value="Trol Avcıları:Arcadia Hikayeleri" />
+            <String fx:value="How I Met Your Mother" />
+            <String fx:value="Leyla ile Mecnun" />
+            <String fx:value="Beni Böyle Sev" />
+            <String fx:value="Patron Bebek Yine İş Başında" />
+            <String fx:value="Atiye" />
+            <String fx:value="Maşa ve Koca Ayı" />
+            <String fx:value="Sünger Bob" />
+            <String fx:value="Stranger Things" />
+            <String fx:value="The Originals" />
+            <String fx:value="Angry Birds" />
+            <String fx:value="Criminal" />
+            <String fx:value="Beyblade" />
+            <String fx:value="Sonic X" />
+            <String fx:value="Kung Fu Panda Muhteşem Sırlar" />
+            <String fx:value="The Blacklist" />
+            <String fx:value="Dünyanın En Sıra Dışı Evleri" />
+            <String fx:value="Car Masters" />
+            <String fx:value="Büyük Tasarımlar" />
+            <String fx:value="Basketball or Nothing" />
+            <String fx:value="The Big Family Cooking" />
+            <String fx:value="Sıradışı Kulübeler" />
+         </FXCollections>
+      </items>
+      </ListView>
+      <ChoiceBox fx:id="takePoint" layoutX="1214.0" layoutY="576.0" prefHeight="26.0" prefWidth="65.0" visible="false">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <Integer fx:value="1" />
+            <Integer fx:value="2" />
+            <Integer fx:value="3" />
+            <Integer fx:value="4" />
+            <Integer fx:value="5" />
+            <Integer fx:value="6" />
+            <Integer fx:value="7" />
+            <Integer fx:value="8" />
+            <Integer fx:value="9" />
+            <Integer fx:value="10" />
+         </FXCollections>
+      </items>
+   </ChoiceBox>
+      <Button fx:id="GivePoint" layoutX="1304.0" layoutY="576.0" mnemonicParsing="false" onAction="#PointAction" text="Puan ver" visible="false" />
+      <Label fx:id="episodenum" layoutX="1510.0" layoutY="520.0" text="1" textFill="WHITE" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="episodenumtext" layoutX="1367.0" layoutY="520.0" text="Bölüm Numarası: " textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="timetext" layoutX="161.0" layoutY="877.0" text="İzlenen Süre: " textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Stop" layoutX="665.0" layoutY="878.0" mnemonicParsing="false" onAction="#Stopaction" prefHeight="30.0" prefWidth="80.0" text="Duraklat" visible="false" />
+      <Button fx:id="Menu" layoutX="1792.0" layoutY="30.0" mnemonicParsing="false" onAction="#returnmenu" text="Menüye Dön" visible="false" />
+      <Label fx:id="Pointtext" layoutX="1214.0" layoutY="575.0" prefHeight="26.0" prefWidth="155.0" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="Episodestext" layoutX="949.0" layoutY="576.0" text="Bölümler:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="Episodes" layoutX="1055.0" layoutY="576.0" prefHeight="26.0" prefWidth="65.0" visible="false">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <Integer fx:value="1" />
+               <Integer fx:value="2" />
+               <Integer fx:value="3" />
+               <Integer fx:value="4" />
+               <Integer fx:value="5" />
+               <Integer fx:value="6" />
+               <Integer fx:value="7" />
+               <Integer fx:value="8" />
+               <Integer fx:value="9" />
+               <Integer fx:value="10" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <ImageView fx:id="tv" fitHeight="532.0" fitWidth="684.0" layoutX="103.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Photos/tüm%20diziler/intro.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="Chooseepisode" layoutX="1133.0" layoutY="576.0" mnemonicParsing="false" onAction="#Goepisode" text="Seç" visible="false" />
+      <Label fx:id="timeminute" layoutX="293.0" layoutY="877.0" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Alllist" layoutX="103.0" layoutY="201.0" mnemonicParsing="false" onAction="#Allaction" prefHeight="36.0" prefWidth="130.0" text="Hepsini göster">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="Lastepisodetext" layoutX="1246.0" layoutY="576.0" text="En son kaldığınız Bölüm: " textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

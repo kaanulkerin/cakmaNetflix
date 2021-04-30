@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="720.0" layoutX="-7.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Photos/giriş%20son.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="logemailtext" layoutX="300.0" layoutY="264.0" prefHeight="25.0" prefWidth="196.0" />
+      <Button fx:id="oturumtext" layoutX="384.0" layoutY="382.0" mnemonicParsing="false" onAction="#oturumac" prefHeight="32.0" prefWidth="115.0" text="Oturum Aç" textFill="#e50914">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="Kayıttext" layoutX="234.0" layoutY="382.0" mnemonicParsing="false" onAction="#Kaydol" prefHeight="32.0" prefWidth="115.0" text="Kaydol" textFill="#e50914">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="logpasswordtext" layoutX="300.0" layoutY="326.0" prefHeight="25.0" prefWidth="196.0" />
+      <Text fx:id="loginerrortext" fill="#e50914" layoutX="144.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="457.36720275878906">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
